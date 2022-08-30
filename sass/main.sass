@@ -1,0 +1,69 @@
+@import "vars"
+@import "colors"
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: 'Montserrat', sans-serif
+    font-weight: 400
+body
+    background: #FDFDFD
+    position: relative
+h1
+    font-size: 26px
+    letter-spacing: 0.05em
+    font-weight: 600 
+h2
+    font-weight: 500
+    font-size: 15px
+    letter-spacing: 0.05em
+span
+    color: inherit
+    font-family: inherit
+    font-size: inherit
+.crumbs
+    font-size: 16px
+    font-weight: 500
+    letter-spacing: 0.05em
+img
+    width: 100%
+    height: auto
+    display: block
+    border-radius: inherit
+button, a
+    +inher 
+    color: inherit
+    text-decoration: none 
+    border: 0 none
+    outline: 0 none
+    background: transparent
+    cursor: pointer
+.menu
+    +flexa 
+    li
+        list-style: none
+.container
+    max-width: $containewMainWidth
+    width: 100%
+    margin: 0 auto
+@import "components/header"
+@import "components/prelinks"
+@import "components/materials"
+@import "components/cons"
+@import "components/footer"
+@media screen and (max-width: $containewMainWidth)
+    .container
+        max-width: 98%
+@media screen and (max-width: 600px)
+    h1
+        font-size: 18px
+        letter-spacing: 0.05em
+        font-weight: 600 
+    h2
+        font-weight: 500
+        font-size: 15px
+        letter-spacing: 0.05em
+    .crumbs
+        font-size: 14px
+        font-weight: 500
+        letter-spacing: 0.05em

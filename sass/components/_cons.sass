@@ -1,0 +1,57 @@
+.cons
+    margin-top: 33px
+    .container
+        background: #FAFAFA
+        border-radius: 24px
+        display: flex
+        justify-content: space-between
+    &__info
+        padding: 65px
+        padding-right: 0px
+        margin-right: 46px
+    &__map
+        max-width: 770px
+        width: 100%
+        border-radius: 24px
+        min-height: 100%
+        max-height: 100%
+        img
+            height: 100%
+    .work__time-phone 
+        .phone__item
+            font-size: 24px
+        .phone-icon
+            width: 20px
+    &__recall
+        margin-top: 30px
+        .recall
+            span
+                padding: 14px 27px
+    &__soz
+        margin-top: 30px
+        .soz__item
+            width: 40px
+            height: 40px
+    &__title
+        font-size: 20px
+        font-weight: 400
+        margin-bottom: 15px
+@media screen and (max-width: $containewMainWidth)
+    .cons 
+        .container
+            flex-direction: column
+            align-items: center
+            padding: 65px
+    .cons__info
+        align-self: flex-start
+        padding: 0px
+        margin-bottom: 30px
+    .cons__map
+        max-width: 100%
+@media screen and (max-width: 600px)
+    .cons 
+        .container
+            padding: 20px 0px
+            border-radius: 5px
+    .cons__title 
+        font-size: 16px

@@ -1,0 +1,34 @@
+.catalog
+    &__title
+        text-align: center
+        margin-bottom: 33px
+.materials
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    &__item
+        max-width: 305px
+        width: 100%
+        background: $grayLight
+        border-radius: 10px
+        transition: .4s
+        display: block
+        border: 1px solid transparent
+        height: 337px
+        padding: 40px 30px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin-bottom: 20px
+        &:hover
+            background: $blue
+            border: 1px solid $blueLight
+        &-image
+            max-height: 200px
+            img
+                max-height: 200px
+            +flexa 
+            justify-content: center
+@media screen and (max-width: $containewMainWidth)
+    .materials
+        justify-content: space-evenly

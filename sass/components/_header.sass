@@ -1,0 +1,114 @@
+header
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.04)
+    background: #FFFFFF
+    .mainHeader
+        +flexa 
+        justify-content: space-between
+        border-bottom: 1px solid #F2F2F2
+        padding: 15px 0px
+    .menu
+        padding: 23px 0px
+        justify-content: space-around
+        &__item
+            font-size: 16px
+            font-weight: 400
+            color: #666666
+            &-active
+                font-weight: 500
+                color: #2D2D2D
+.header__left, .header__right
+    +flexa
+.header__left
+    .logo
+        width: 120px
+        border: 1px solid $white
+        border-radius: 8px
+        margin-right: 10px
+    .logo__text
+        font-size: 10px
+        max-width: 175px
+        text-transform: uppercase
+        span
+            font-weight: 600
+.soz
+    +flexa 
+    margin-right: 30px
+    &__item
+        width: 30px
+        height: 30px
+        border-radius: 100%
+        margin-right: 5px
+.recall
+    text-transform: uppercase
+    margin-right: 32px
+    background: linear-gradient(to bottom, #BFE101,#A9C800)
+    border-radius: 100px
+    padding: 1px
+    span
+        display: block
+        padding:  16px 27px
+        background: #ffffff
+        border-radius: inherit
+        font-size: 13px
+        font-weight: 500
+.work__time
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    &-text
+        text-transform: uppercase
+        font-size: 10px
+        margin-bottom: 1px
+.work__time-phone
+    +flexa 
+    .phone-icon
+        width: 16px
+        margin-right: 10px
+    .phone__item 
+        font-weight: 600
+        font-size: 20px
+.burger
+    display: none
+@media screen and (max-width: 900px)
+    header
+        .recall
+            margin-right: 0px
+        .soz
+            display: none
+        .work__time
+            display: none
+@media screen and (max-width: 600px)
+    .header__left .logo__text, .menu
+        display: none
+    header
+        .menu
+            display: flex
+            position: fixed
+            top: 0
+            left: -1000px
+            transition: .5s
+            flex-direction: column
+            height: 100vh
+            justify-content: flex-start 
+            align-items: flex-start
+            background: #ffffff
+            z-index: 10
+            padding: 20px 20px
+            width: 50%
+            li
+                margin-bottom: 20px
+            &-active
+                left: 0px
+    .head__menu
+        display: flex
+        justify-content: flex-end
+        padding: 10px 0px
+    .burger
+        display: block
+        width: 20px
+    .recall span
+        padding: 13px 17px
+@media screen and (max-width: 400px)
+    header
+        .menu
+            width: 75%
