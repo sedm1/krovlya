@@ -1,0 +1,86 @@
+.tabs
+    margin-top: 30px
+    .container
+        background: #FAFAFA
+        border-radius: 24px
+        padding: 30px
+    &__caption
+        display: flex 
+        align-items: center 
+        li
+            min-width: 260px
+            padding: 23px 24px
+            +flexa 
+            justify-content: center
+            background: $white
+            border-radius: 24px
+            text-transform: uppercase
+            color: #2D2D2D
+            font-weight: 800
+            font-size: 16px
+            margin-right: 20px
+            cursor: pointer
+            &:last-child
+                margin-right: 0px
+        .active 
+            background: #EAEAEA
+    &__content 
+        display: none 
+        margin-top: 30px
+        &.active 
+            display: block 
+        .tabs__text
+            font-size: 16px
+            font-weight: 400
+            margin-bottom: 30px
+            &:last-child
+                margin-bottom: 0px
+                margin-top: 30px
+    &__list
+        margin-top: 40px
+        padding-left: 20px
+        li
+            font-weight: 500
+            list-style: none
+            position: relative
+            margin-bottom: 8px
+            &:last-child
+                margin-bottom: 0px
+            &::before
+                content: ""
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: -20px
+                width: 3px
+                height: 3px
+                border-radius: 100%
+                background: $black
+    .tabs__list-title
+        font-weight: 600
+@media screen and (max-width: $containewMainWidth)
+    .tabs__caption
+        flex-wrap: wrap
+        li
+            margin-bottom: 15px
+@media screen and (max-width: 600px)
+    .tabs
+        margin-top: 50px
+        .container
+            padding: 20px 0px
+    .tabs__caption
+        li
+            width: 100%
+            margin-right: 0px
+    .tabs__content 
+        .tabs__text
+            font-size: 14px
+    .tabs__list 
+        li
+            font-size: 14px
+            &::before
+                top: 10px
+                transform: translateY(0%)
+                
+            
+

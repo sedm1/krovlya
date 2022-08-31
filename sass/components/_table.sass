@@ -1,0 +1,67 @@
+.table
+    margin-top: 159px
+    &__title
+        text-align: center
+        font-weight: 400
+        font-size: 32px
+        font-family: 'Manrope', sans-serif
+        margin-bottom: 13px
+    &__descript
+        font-family: 'Manrope', sans-serif
+        font-size: 20px
+        margin-top: 6px
+    &__main
+        margin-top: 40px
+        padding-left: 1px
+        &-title
+            font-size: 28px
+            font-weight: 600
+            margin-bottom: 40px
+        &-item
+            +flexa 
+            justify-content: space-between
+            padding: 3px 0px
+            padding-right: 10px
+            padding-left: 3px
+            border-bottom: 1px solid #f0f0f0
+            &:nth-child(2n + 1)
+                background: #f0f0f0
+        &-titles
+            .item__name
+                font-weight: 700
+    .item__right
+        +flexa 
+        .item__name
+            text-align: center
+            margin-right: 20px
+            &:last-child
+                margin-right: 0px
+    .item__name
+        font-size: 15px
+        min-width: 150px
+.pred__title
+    text-transform: uppercase
+    color: #d22e2e
+    font-size: 20px
+    margin-top: 20px
+    font-weight: 600
+.pred__descript
+    margin-top: 15px
+    span
+        text-transform: uppercase
+@media screen and (max-width: 1040px)
+    .table__main-item
+        min-width: 1200px
+        
+    .table__scroll
+        max-width: 100%
+        overflow-x: scroll
+@media screen and (max-width: 600px)
+    .table__main-item
+        min-width: 1000px
+    .table
+        margin-top: 20px
+        &__title
+            font-size: 7vw
+        &__descript
+            font-size: 4vw
